@@ -1,0 +1,32 @@
+<a href="/">
+  <div class="homeIcon">
+    <i class="icon-jr_logo"></i>
+  </div>
+</a>
+
+<div imgload="contact_bg_.jpg" class="container home contact" ng-style="{'background-image':headImg}">
+  <div class="info">
+    <h4>Contact us</h4>
+    <h3>thejamritual@gmail.com</h3>
+    <ul class="group">
+      <li><a href="https://www.facebook.com/JamRitual" target="_blank">Facebook</a></li>
+      <li><a href="http://instagram.com/jam_ritual" target="_blank">Instagram</a></li>
+      <li><a href="https://twitter.com/JamRitual" target="_blank">Twitter</a></li>
+      <li><a href="https://www.youtube.com/channel/UCEhmspWzD1jiH2lqO473_9g" target="_blank">Youtube</a></li>
+      <li><a class="last" href="http://www.reverbnation.com/jamritual" target="_blank">ReverbNation</a></li>
+    </ul>
+  </div>
+  <div player player-song="{{song.url}}" player-name="{{song.name}}"></div>
+</div>
+<div class="sidebar"  ng-class="{active: menuActive}">
+  <div id="hamburger" ng-click="showMenu()">
+    <span svgicon class="hamburger si-icon-hamburger-cross " data-icon-name="hamburgerCross"></span>
+  </div>
+  <ul class="nav">
+    <li><a  href="" ng-click="goto('/')">Home</a></li>
+    <li><a href="" ng-click="goto('about')">About us</a></li>
+    <li><a href="" ng-click="goto('shows')">Shows</a></li>
+    <li><a href="" class="active">Contact</a></li>
+  </ul>
+
+</div>

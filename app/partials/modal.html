@@ -1,0 +1,15 @@
+<div class="cont" ng-swipe-left="next()" ng-swipe-right="prev()">
+  <i class="icon-exit" ng-click="close()"></i>
+  <img class="spiner" ng-style="marTop" ng-if="!image" src="images/spiner.gif" alt="">
+  <img ng-if="image" ng-style="modheight" ng-src="{{ image }}" alt="">
+  <div ng-style="arrH" class="right arrow" ng-click="next()" ng-class="{ac: curr < images.length - 1}" ng-show="curr < images.length - 1">
+    <div class="bck">
+      <span><i class="icon-arrow"></i></span>
+    </div>
+  </div>
+  <div ng-style="arrH" class="left arrow" ng-click="prev()" ng-class="{ac: curr > 0}" ng-show="curr > 0">
+    <div class="bck">
+      <span><i class="icon-arrow_left"></i></span>
+    </div>
+  </div>
+</div>

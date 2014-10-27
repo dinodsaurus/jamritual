@@ -1,0 +1,216 @@
+<div class="container about">
+  <div imgload="bend.jpg" class="headPhoto" ng-style="{'background-image':headImg, height: imageHeight + 'px'}"></div>
+  <div class="nav" ng-class="{ sticky: sticky }">
+    <a href="/" class="logo"><i class="icon-jr_logo"></i></a>
+    <ul class="navLinks group">
+      <li><a href="#about" du-scrollspy offset="60" du-smooth-scroll>Bio</a></li>
+      <li><a href="#members" du-scrollspy offset="60" du-smooth-scroll>Members</a></li>
+      <li><a href="#photo" du-scrollspy offset="60" du-smooth-scroll>Photo</a></li>
+      <li><a href="#video" du-scrollspy offset="60" du-smooth-scroll>Video</a></li>
+      <li><a href="#press" du-scrollspy offset="60" du-smooth-scroll>Press</a></li>
+    </ul>
+
+    <span svgicon class="hamburger si-icon si-icon-hamburger-cross" ng-class="{active: menuActive}" data-icon-name="hamburgerCross" ng-click="showMenu()"></span>
+  </div>
+  <div class="menu" ng-class="{active: menuActive, closed: !menuActive, sticky: sticky}">
+    <ul class="menuLinks">
+      <li><a href="" ng-click="goto('/')">Home</a></li>
+      <li><a class="active" href="">About us</a></li>
+      <li><a href="" ng-click="goto('shows')">Shows</a></li>
+      <li><a href="" ng-click="goto('contact')">Contact</a></li>
+    </ul>
+    <div player player-song="{{song.url}}" player-name="{{song.name}}"></div>
+  </div>
+  <div id="bio">
+    <div id="about">
+      <div class="black">
+        <div class="content about">
+          <h5>About us</h5>
+          <div class="heading">
+            <h4><span>——</span> Biography <span>——</span></h4>
+          </div>
+          <h3>Jam Ritual is a rock band from Varaždin, Croatia, formed in 2009</h3>
+        </div>
+      </div>
+      <div class="white">
+        <div class="content just">
+          <p>
+            Despite the different musical influences of the band members, the sound image is solid and defined. Live performances are filled with energy and emotion. The best musical genre that would describe the sound of the band would be Rock/Blues.
+          </p>
+          <p>
+            From 2012, they've been working on their songs and shortly after that, they’ve released the first single Leavin' Home, which encountered very good response from audience and critics. Shortly after the release, the band jumped to a first place on Reverb Nation, as the best rock band from northwestern part of Croatia. In that period, Jam Ritual collaborated with producer Petar Horvat and Hotline Mastering studio from New York. Before they decided to record an album, they've released two more songs, Way Of Life and Salvation. They also published live video from Špancirfest 2013 for the song Better Than I Was.
+          </p>
+          <p>
+            So far, the band has done more than 100 concerts. The most important ones are concerts like one that took place in the Oberschwabenhalle Ravensburg, Germany, where they performed as headliners, along with six other European bands. Furthermore, concerts on the main square in Varaždin and performances at Blues Festivals in 2012 and 2013.
+          </p>
+          <p>
+            After that, show in Tvornica kulture, Zagreb, where Jam Ritual performed as an opening act for American rock attraction Rival Sons, on their demand. This is followed by the concert which they held on the main stage of the 7th InMusic festival (CRO) as an opening act for Gorillaz Sound System, performances at UFO Festival in Osijek, shows in Vinkovci, Rijeka and many other cities across Croatia and Slovenia.
+          </p>
+          <p>
+            2013 will be remembered by many festivals that Jam Ritual has been part of, including Oromoško poletje (SLO), Varaždin Gori (CRO) and, certainly, one of the most important concerts in their career so far, when Skunk Anansie elected them for the support band at the Špancirfest 2013.
+          </p>
+          <p>
+            Jam Ritual recorded their first album "Greasebucket". It was recorded in the MC Pavarotti studio, in a 150 m2 live room. The equipment that they used for recording was used in London by bands like U2, Sex Pistols, Bob Marley ... The album contains ten original songs, and is currently at the final stage. It will be ready soon!
+          </p>
+          <p>
+            Jam Ritual is currently promoting upcoming album at concerts. In 2014, they’ve played second time at the 9th InMusic Festival (CRO) as a support band for bands The Fratellis and Foals.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="members">
+      <div class="black">
+        <div class="content about">
+          <h5>About us</h5>
+          <div class="heading">
+            <h4><span>——</span> Members <span>——</span></h4>
+          </div>
+          <h3>Meet Jam Ritual original lineup</h3>
+        </div>
+      </div>
+      <div class="members group">
+        <a href="https://www.facebook.com/karlo.merkas" target="_blank">
+          <div class="member">
+            <img src="images/merk.jpg" alt="">
+            <div class="overlay">
+              <h2>KARLO MERKAŠ</h2>
+              <p>Bassist, music and lyric author</p>
+              <i class="icon-bass_guitar"></i>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/ederahovic" target="_blank">
+          <div class="member">
+            <img src="images/dera.jpg" alt="">
+            <div class="overlay">
+              <h2>EDVIN ĐERAHOVIĆ</h2>
+              <p>Lead guitarist and main music author in the band</p>
+              <i class="icon-gipson_guitar"></i>
+
+            </div>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/tkalectoni" target="_blank">
+          <div class="member">
+            <img src="images/toni.jpg" alt="">
+            <div class="overlay">
+              <h2>TONI TKALEC</h2>
+              <p>Lead singer, guitarist and writer.</p>
+              <i class="icon-microphone"></i>
+
+            </div>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/matija.burek" target="_blank">
+          <div class="member">
+            <img src="images/bur.jpg" alt="">
+            <div class="overlay">
+              <h2>MATIJA BUREK</h2>
+              <p>Drummer and lyric author.</p>
+              <i class=" icon-drum"></i>
+
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="photo">
+      <div class="black">
+        <div class="content about">
+          <h5>About us</h5>
+          <div class="heading phot">
+            <h4><span>——</span> Photo <span>——</span></h4>
+          </div>
+          <h3>Photos from previous Jam Ritual concerts</h3>
+        </div>
+      </div>
+      <div class="black" id="photo">
+        <div class="photos group">
+          <div class="photo" ng-repeat="gallery in galleries" ng-class="{main: $first}" ng-click="open('lg', gallery.images)">
+            <img ng-src="{{gallery.images[0].thumb}}" alt="">
+            <div class="overlay">
+              <p class="date">{{gallery.date | date:'dd MMM yyyy'}}</p>
+              <div class="line"></div>
+              <h2>{{gallery.name}}</h2>
+            </div>
+            <div class="btn">
+              <p>view album</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="black">
+        <div class="content about">
+          <h5>Instagram</h5>
+          <div class="heading phot">
+            <h4><span>——</span> #jamritual <span>——</span></h4>
+          </div>
+          <h3>Please follow us on instagram</h3>
+        </div>
+      </div>
+      <div class="photos insta group">
+        <div class="photo" ng-repeat="img in instaImages">
+          <a href="{{img.link}}" target="_blank">
+            <img ng-src="{{img.images.thumbnail.url}}" alt="">
+            <div class="overlay">
+              <p>{{img.user.username}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="video">
+      <div class="black">
+        <div class="content about">
+          <h5>About us</h5>
+          <div class="heading">
+            <h4><span>——</span> Video <span>——</span></h4>
+          </div>
+          <h3>Enjoy in Jam Ritual live shows and music videos</h3>
+        </div>
+      </div>
+      <div>
+        <div class="videos group">
+          <div class="video">
+<iframe width="100%" height="100%" src="//www.youtube.com/embed/y_d3McnhFQ4?autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="video">
+            <iframe width="100%" height="100%" src="//www.youtube.com/embed/N6fb2T6TQ8o?autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="press">
+      <div class="black">
+        <div class="content about">
+          <h5>About us</h5>
+          <div class="heading">
+            <h4><span>——</span> Press <span>——</span></h4>
+          </div>
+          <h3> Feel free to read Jam Ritual show reviews</h3>
+        </div>
+      </div>
+      <div class="press">
+        <ul>
+          <a ng-href="{{p.link}}" ng-repeat="p in press" target="_blank"><li>
+            <p class="date">{{p.date | date:'dd MMM yyyy'}}</p>
+            <div class="smallLine"></div>
+            <h3>{{p.name}}</h3>
+            <p class="izvor">{{p.author}}</p>
+          </li></a>
+        </ul>
+      </div>
+    </div>
+    <div class="lastFoot">
+      <h3>Follow us</h3>
+      <ul class="group">
+        <li><a href="https://www.facebook.com/JamRitual" target="_blank">Facebook</a></li>
+        <li><a href="http://instagram.com/jam_ritual" target="_blank">Instagram</a></li>
+        <li><a href="https://twitter.com/JamRitual" target="_blank">Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCEhmspWzD1jiH2lqO473_9g" target="_blank">Youtube</a></li>
+        <li><a class="last" href="http://www.reverbnation.com/jamritual" target="_blank">ReverbNation</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</div>

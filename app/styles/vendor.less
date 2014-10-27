@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}// Nothing yet
+/*!
+* angular-loading-bar v0.5.0
+* https://chieffancypants.github.io/angular-loading-bar
+* Copyright (c) 2014 Wes Cruver
+* License: MIT
+*/
+
+/* Make clicks pass-through */
+#loading-bar,
+#loading-bar-spinner {
+	pointer-events: none;
+	-webkit-pointer-events: none;
+	-webkit-transition: 350ms linear all;
+	-moz-transition: 350ms linear all;
+	-o-transition: 350ms linear all;
+	transition: 350ms linear all;
+}
+
+#loading-bar.ng-enter,
+#loading-bar.ng-leave.ng-leave-active,
+#loading-bar-spinner.ng-enter,
+#loading-bar-spinner.ng-leave.ng-leave-active {
+	opacity: 0;
+}
+
+#loading-bar.ng-enter.ng-enter-active,
+#loading-bar.ng-leave,
+#loading-bar-spinner.ng-enter.ng-enter-active,
+#loading-bar-spinner.ng-leave {
+	opacity: 1;
+}
+
+#loading-bar .bar {
+	-webkit-transition: width 350ms;
+	-moz-transition: width 350ms;
+	-o-transition: width 350ms;
+	transition: width 350ms;
+
+	background: #b59e5c;
+	position: fixed;
+	z-index: 10002;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	border-bottom-right-radius: 1px;
+	border-top-right-radius: 1px;
+	opacity:.8;
+}
+
+/* Fancy blur effect */
+#loading-bar .peg {
+	position: absolute;
+	width: 70px;
+	right: 0;
+	top: 0;
+	height: 2px;
+	opacity: .45;
+	-moz-box-shadow: #29d 1px 0 6px 1px;
+	-ms-box-shadow: #29d 1px 0 6px 1px;
+	-webkit-box-shadow: #29d 1px 0 6px 1px;
+	box-shadow: #29d 1px 0 6px 1px;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+}
+
+#loading-bar-spinner {
+	display: block;
+	position: fixed;
+	z-index: 10002;
+	width:100%;
+	height:100%;
+	background:#151515;
+}
+
+#loading-bar-spinner .spinner-icon {
+	position:absolute;
+	width: 75px;
+	height: 75px;
+	margin-left:-38px;
+	top:45%;
+	left:50%;
+	background:url("../images/spiner.gif") no-repeat;
+	background-size:100% auto;
+}

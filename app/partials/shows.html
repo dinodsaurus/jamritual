@@ -1,0 +1,66 @@
+<div class="container about">
+  <div imgload="shows.jpg" class="headPhoto" ng-style="{'background-image':headImg, height: imageHeight + 'px'}"></div>
+  <div class="nav" ng-class="{ sticky: sticky}">
+    <a href="/" class="logo">
+      <i class="icon-jr_logo"></i>
+    </a>
+    <span svgicon class="hamburger si-icon si-icon-hamburger-cross" ng-class="{active: menuActive}" data-icon-name="hamburgerCross" ng-click="showMenu()"></span>
+  </div>
+  <div class="menu" ng-class="{active: menuActive, closed: !menuActive, sticky: sticky}">
+    <ul class="menuLinks">
+      <li><a href="" ng-click="goto('/')">Home</a></li>
+      <li><a href="" ng-click="goto('about')">About us</a></li>
+      <li><a class="active" href="">Shows</a></li>
+      <li><a href="" ng-click="goto('contact')">Contact</a></li>
+    </ul>
+    <div player player-song="{{song.url}}" player-name="{{song.name}}"></div>
+  </div>
+  <div id="bio">
+    <div class="black">
+      <div class="content about">
+        <h5>Shows</h5>
+        <div class="heading">
+          <h4><span>——</span> Upcoming <span>——</span></h4>
+        </div>
+        <h3>Find out all details about upcoming Jam Ritual concerts</h3>
+      </div>
+    </div>
+    <div class="shows white">
+      <div class="content">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <th style="width:150px;">
+                  <i class="icon-calendar"></i>
+                  time
+              </th>
+              <th>
+                  <i class=" icon-pin"></i>
+                  location
+              </th>
+              <th style="width:150px;">
+                  <i class="icon-ticket"></i>
+                  ticket
+              </th>
+            </thead>
+            <tr ng-repeat="show in shows">
+              <td>{{show.newDate | date:'dd MMM yyyy'}}</td>
+              <td><a ng-href="{{show.link}}">{{show.location}}</a></td>
+              <td>{{show.price}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="lastFoot">
+      <h3>Follow us</h3>
+      <ul class="group">
+        <li><a href="https://www.facebook.com/JamRitual" target="_blank">Facebook</a></li>
+        <li><a href="http://instagram.com/jam_ritual" target="_blank">Instagram</a></li>
+        <li><a href="https://twitter.com/JamRitual" target="_blank">Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCEhmspWzD1jiH2lqO473_9g" target="_blank">Youtube</a></li>
+        <li><a class="last" href="http://www.reverbnation.com/jamritual" target="_blank">ReverbNation</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

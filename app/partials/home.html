@@ -1,0 +1,22 @@
+<a href="/"><div class="homeIcon">
+  <i class="icon-jr_logo"></i>
+</div></a>
+<div imgload="main.png" class="container home" ng-mousemove="moseMoved($event)">
+  <div player player-song="{{song.url}}" player-name="{{song.name}}"></div>
+  <h1>The official website of Jam Ritual</h1>
+  <h2>Self produced album of ten,<br/> greasy rock'n'roll songs coming soon.</h2>
+  <div class="mobile">
+  </div>
+</div>
+<div class="sidebar"  ng-class="{active: menuActive}">
+  <div id="hamburger" ng-click="showMenu()">
+    <span svgicon class="hamburger si-icon-hamburger-cross " data-icon-name="hamburgerCross"></span>
+  </div>
+  <ul class="nav">
+    <li><a class="active" href="/">Home</a></li>
+    <li><a href="" ng-click="goto('about')">About us</a></li>
+    <li><a href="" ng-click="goto('shows')">Shows</a></li>
+    <li><a href="" ng-click="goto('contact')">Contact</a></li>
+  </ul>
+</div>
+<div class="gold" ng-style="goldStyle"></div>
