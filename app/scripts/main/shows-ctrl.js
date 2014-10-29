@@ -14,7 +14,8 @@ angular.module('jamritual')
       console.log(data);
       for(var i=0;i<data.length; i++){
         var date = $scope.shows[i].date.split("-");
-        $scope.shows[i].newDate = new Date(date[0], date[1], date[2]);
+        var month = parseInt(date[1], 10) - 1;
+        $scope.shows[i].newDate = new Date(date[0], month, date[2]);
       }
     });
     $scope.showMenu = function () {

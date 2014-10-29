@@ -1,6 +1,4 @@
-
 'use strict';
-
 angular.module('jamritual')
   .directive('svgicon', function ($timeout) {
     return {
