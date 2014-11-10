@@ -11,9 +11,8 @@ angular.module('jamritual')
     });
     serverFac.getShows().then(function (data) {
       $scope.shows = data;
-      console.log(data);
       for(var i=0;i<data.length; i++){
-        var date = $scope.shows[i].date.split("-");
+        var date = $scope.shows[i].date.split('-');
         var month = parseInt(date[1], 10) - 1;
         $scope.shows[i].newDate = new Date(date[0], month, date[2]);
       }

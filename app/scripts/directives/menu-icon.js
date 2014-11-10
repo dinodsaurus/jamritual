@@ -51,11 +51,11 @@ angular.module('jamritual')
 
       	// from https://github.com/desandro/classie/blob/master/classie.js
       	function classReg( className ) {
-      		return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+      		return new RegExp('(^|\\s+)' + className + '(\\s+|$)');
       	}
 
       	function hasClass( el, c ) {
-      		return 'classList' in document.documentElement ? el.classList.contains( c ) : classReg( c ).test( el.className )
+      		return 'classList' in document.documentElement ? el.classList.contains( c ) : classReg( c ).test( el.className );
       	}
 
       	function extend( a, b ) {
@@ -76,11 +76,11 @@ angular.module('jamritual')
 
       	// http://snipplr.com/view.php?codeview&id=5259
       	function isMouseLeaveOrEnter( e, handler ) {
-      		if (e.type != 'mouseout' && e.type != 'mouseover') return false;
+      		if (e.type !== 'mouseout' && e.type !== 'mouseover') return false;
       		var reltg = e.relatedTarget ? e.relatedTarget :
-      		e.type == 'mouseout' ? e.toElement : e.fromElement;
-      		while (reltg && reltg != handler) reltg = reltg.parentNode;
-      		return (reltg != handler);
+      		e.type === 'mouseout' ? e.toElement : e.fromElement;
+      		while (reltg && reltg !== handler) reltg = reltg.parentNode;
+      		return (reltg !== handler);
       	}
 
       	/*** svgIcon ***/

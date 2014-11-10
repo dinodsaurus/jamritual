@@ -1,15 +1,15 @@
 'use strict';
 
 angular.module('jamritual')
-  .directive('resVideo', function (playerFac) {
+  .directive('resVideo', function () {
     return {
       restrict: 'A',
       scope: {},
-      link: function (scope, element, attr) {
+      link: function (scope, element) {
 
         var iframe = element,
 
-        var players = /www.youtube.com|player.vimeo.com/;
+            players = /www.youtube.com | player.vimeo.com/;
 
         if ( iframe.src.search( players ) > 0 ) {
 

@@ -1,5 +1,5 @@
 'use strict';
-
+/* global Audio*/
 angular.module('jamritual')
   .directive('player', function (playerFac) {
     return {
@@ -9,6 +9,11 @@ angular.module('jamritual')
       link: function (scope, element, attr) {
         scope.name = attr.playerName;
         scope.active = playerFac.playing;
+
+        function proggressBar() {
+          var progPercent = (100 / scope.audi.duration) * scope.audi.currentTime;
+          scope.progWidth = { 'width': progPercent + '%'};
+        }
 
         if(playerFac.player){
           scope.audi = playerFac.player;
@@ -25,10 +30,7 @@ angular.module('jamritual')
         }else{
           proggressBar();
         }
-        function proggressBar() {
-          var progPercent = (100 / scope.audi.duration) * scope.audi.currentTime;
-          scope.progWidth = { 'width': progPercent + '%'};
-        }
+
       },
       controller: function($scope){
           $scope.playing = 'N';

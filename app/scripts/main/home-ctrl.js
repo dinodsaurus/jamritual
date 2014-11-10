@@ -7,8 +7,8 @@ angular.module('jamritual')
       var x = e.offsetX,
           y = e.offsetY;
       $scope.goldStyle = {
-        "left": "-" + x/25 + "px",
-        "top": "-" + y/25 + "px"
+        'left': '-' + x/25 + 'px',
+        'top': '-' + y/25 + 'px'
       };
     };
     $scope.showMenu = function () {

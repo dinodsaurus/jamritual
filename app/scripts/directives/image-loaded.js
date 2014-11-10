@@ -1,5 +1,5 @@
 'use strict';
-
+/* global Image*/
 angular.module('jamritual')
   .directive('imgload', function () {
     return {
@@ -10,13 +10,13 @@ angular.module('jamritual')
         image.onload = function () {
            scope.$emit('imgLoaded');
            scope.$apply(function () {
-             scope.headImg = "url('images/" + imgLoad + "')";
+             scope.headImg = 'url("images/' + imgLoad + '")';
            });
         };
         image.onerror = function () {
             scope.$emit('imgLoaded');
         };
-        image.src = "images/" + imgLoad;
+        image.src = 'images/' + imgLoad;
       },
       controller: function () {
 
